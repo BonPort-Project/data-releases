@@ -1,7 +1,7 @@
 BonPort commune database — data licence
 =======================================
 
-The BonPort commune database published in the BonPort-Project/data releases
+The BonPort commune database published in the BonPort-Project/data-releases releases
 (communes_fr.csv, communes_fr.parquet, communes_fr.pmtiles, base.json,
 train-<origin>.json, tags.json) is a derived database made available under the
 Open Database License (ODbL) v1.0, reproduced in full below.
@@ -12,9 +12,9 @@ ODbL (share-alike) and attribute the sources listed in ATTRIBUTION.md, which
 ships alongside this file in every release.
 
 Not covered by this licence:
-- scoring-config.json — the BonPort scoring model, copied byte-for-byte from the
-  BonPort-Project/engine repository at the commit recorded in release.json
-  (engine_commit); its terms are those of that repository.
+- scoring-config.json — the BonPort scoring model, at the model version recorded
+  in release.json (engine_commit). It is not part of the database and is not
+  licensed under the ODbL.
 - release.json and changes.json — release metadata.
 
 Official text: https://opendatacommons.org/licenses/odbl/1-0/
