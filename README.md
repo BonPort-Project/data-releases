@@ -39,8 +39,8 @@ medians are published, and only when they rest on at least 5 sales.
 `release.json` lists a SHA-256 checksum for every other file in the release:
 
 ```sh
-gh release download data-v0.4.9 -R BonPort-Project/data-releases -D bonport-data-v0.4.9
-cd bonport-data-v0.4.9
+gh release download data-v0.4.10 -R BonPort-Project/data-releases -D bonport-data-v0.4.10
+cd bonport-data-v0.4.10
 jq -r '.checksums | to_entries[] | "\(.value)  \(.key)"' release.json | shasum -a 256 -c -
 ```
 
