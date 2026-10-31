@@ -32,15 +32,15 @@ derivative database must remain under the ODbL and credit the sources listed in
 not covered by the ODbL.
 
 Property prices come from DGFiP's DVF (Demandes de valeurs foncières). Only commune-level
-medians are published, and only when they rest on at least 5 sales.
+medians are published, only when they rest on at least 5 sales, and no sale count under 5 is published.
 
 ## Verifying a download
 
 `release.json` lists a SHA-256 checksum for every other file in the release:
 
 ```sh
-gh release download data-v0.4.11.1 -R BonPort-Project/data-releases -D bonport-data-v0.4.11.1
-cd bonport-data-v0.4.11.1
+gh release download data-v0.4.12 -R BonPort-Project/data-releases -D bonport-data-v0.4.12
+cd bonport-data-v0.4.12
 jq -r '.checksums | to_entries[] | "\(.value)  \(.key)"' release.json | shasum -a 256 -c -
 ```
 
